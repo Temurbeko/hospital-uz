@@ -1,4 +1,16 @@
 {
+  "@openmrs/esm-home-app": {
+    "extensionSlots": {
+      "homepage-dashboard-slot": {
+        "remove": ["laboratory-dashboard-link", "ward-dashboard-link"]
+      }
+    },
+    "Translation overrides": {
+      "en": {
+        "home": "Asosiy"
+      }
+    }
+  },
   "@openmrs/esm-patient-chart-app": {
     "restrictByVisitLocationTag": true,
     "showUpcomingAppointments": true,
@@ -457,11 +469,11 @@
     }
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#b5c4ff"
+    "Brand color #1": "#0059ff"
   },
   "@openmrs/esm-login-app": {
     "logo": {
-      "src": "${openmrsSpaBase}/logo.png",
+      "src": "${openmrsSpaBase}/login-logo.png",
       "alt": "Clinic Logo"
     },
     "Translation overrides": {
@@ -1183,6 +1195,25 @@
         "searchThisList": "Ushbu ro'yxatni qidiring",
         "sex": "Jins",
         "startDate": "Boshlanish sanasi"
+      }
+    }
+  },
+  "@openmrs/esm-form-engine-app": {
+    "Translation overrides": {
+      "en": {
+        "cancel": "Bekor qilish",
+        "closeThisPanel": "Ushbu panelni yopish",
+        "collapseAll": "Hammasini yig‘ishtirish",
+        "deleteQuestion": "Savolni o‘chirish",
+        "deleteQuestionConfirmation": "Ushbu savolni o‘chirishga aminmisiz?",
+        "deleteQuestionExplainerText": "Bu amalni bekor qilib bo‘lmaydi.",
+        "errorTitle": "Ushbu shaklda xatolik yuz berdi",
+        "expandAll": "Hammasini kengaytirish",
+        "loading": "Yuklanmoqda",
+        "or": "yoki",
+        "thisList": "ushbu ro‘yxat",
+        "toggleCollapseOrExpand": "Yig‘ishtirish yoki kengaytirishni almashtirish",
+        "tryAgainMessage": "Boshqa shaklni ochishga harakat qiling"
       }
     }
   }
