@@ -1891,6 +1891,48 @@
       }
     }
   },
+  "@openmrs/esm-patient-notes-app": {
+    "Translation overrides": {
+      "en": {
+        "add": "Qo'shish",
+        "addImage": "Rasm qo'shish",
+        "addVisitNote": "Tashrif yozuvini qo'shish",
+        "clinicalNoteLabel": "Izohlaringizni yozing",
+        "clinicalNotePlaceholder": "Bu yerga izoh yozing",
+        "date": "Sana",
+        "diagnoses": "Tashxislar",
+        "discard": "Bekor qilish",
+        "emptyDiagnosisText": "Hech qanday tashxis tanlanmagan — Quyida tashxis kiriting",
+        "enterPrimaryDiagnoses": "Asosiy tashxisni kiriting",
+        "enterSecondaryDiagnoses": "Qo'shimcha tashxislarni kiriting",
+        "error": "Xato",
+        "errorFetchingConcepts": "Tushunchalarni olishda muammo yuz berdi",
+        "image": "Rasm",
+        "imageRemoved": "Rasm o'chirildi",
+        "imageUploadHelperText": "Rasm yuklang yoki ushbu qurilmaning kamerasi yordamida rasm oling",
+        "noMatchingDiagnoses": "Mos keladigan tashxis topilmadi",
+        "note": "Izoh",
+        "noVisitNoteToDisplay": "Ko'rsatish uchun tashrif yozuvi yo'q",
+        "primaryDiagnosis": "Asosiy tashxis",
+        "primaryDiagnosisInputPlaceholder": "Asosiy tashxisni tanlang",
+        "primaryDiagnosisRequired": "Kamida bitta asosiy tashxisni tanlang",
+        "saveAndClose": "Saqlash va yopish",
+        "saving": "Saqlanmoqda",
+        "searchForPrimaryDiagnosis": "Asosiy tashxisni qidiring",
+        "searchForSecondaryDiagnosis": "Qo'shimcha tashxisni qidiring",
+        "secondaryDiagnosis": "Qo'shimcha tashxis",
+        "secondaryDiagnosisInputPlaceholder": "Qo'shimcha tashxisni tanlang",
+        "seeAll": "Hammasini ko'rish",
+        "visitDate": "Tashrif sanasi",
+        "visitNote": "Tashrif yozuvi",
+        "visitNoteNowVisible": "Endi Uchrashuvlar sahifasida ko'rinadi",
+        "visitNotes": "Tashrif yozuvlari",
+        "visitNoteSaved": "Tashrif yozuvi saqlandi",
+        "visitNoteSaveError": "Tashrif yozuvini saqlashda xato",
+        "visitNoteWorkspaceTitle": "Tashrif yozuvi"
+      }
+    }
+  },
   "core": {
     "Translation overrides": {
       "en": {
