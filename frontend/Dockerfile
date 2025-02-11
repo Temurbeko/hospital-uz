@@ -6,11 +6,31 @@ FROM --platform=$BUILDPLATFORM node:18-alpine as dev
 
 ARG APP_SHELL_VERSION=next
 
-RUN mkdir -p /app
+RUN mkdir -p /app 
 WORKDIR /app
+
+
+COPY packages/openmrs-esm-login-app-6.0.4.tgz .
+COPY packages/openmrs-esm-patient-attachments-app-9.1.0.tgz .
+COPY packages/openmrs-esm-patient-banner-app-9.1.0.tgz .
+COPY packages/openmrs-esm-patient-medications-app-9.1.0.tgz .
+COPY packages/openmrs-esm-patient-orders-app-9.1.0.tgz .
+COPY packages/openmrs-esm-patient-tests-app-9.1.0.tgz .
+COPY packages/openmrs-esm-patient-vitals-app-9.1.0.tgz .
 
 COPY spa-assemble-config.json .
 COPY spa-build-config.json .
+
+RUN yarn add ./openmrs-esm-login-app-6.0.4.tgz
+RUN yarn add ./openmrs-esm-patient-attachments-app-9.1.0.tgz
+RUN yarn add ./openmrs-esm-patient-banner-app-9.1.0.tgz
+RUN yarn add ./openmrs-esm-patient-medications-app-9.1.0.tgz
+RUN yarn add ./openmrs-esm-patient-orders-app-9.1.0.tgz
+RUN yarn add ./openmrs-esm-patient-tests-app-9.1.0.tgz
+RUN yarn add ./openmrs-esm-patient-vitals-app-9.1.0.tgz
+
+  
+
 
 ARG CACHE_BUST
 RUN npx --legacy-peer-deps openmrs@${APP_SHELL_VERSION:-next} assemble --manifest --mode config --config spa-assemble-config.json --target ./spa
