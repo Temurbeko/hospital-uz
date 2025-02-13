@@ -18,7 +18,7 @@
     "@openmrs/esm-openconceptlab-app": "next",
     "@openmrs/esm-patient-allergies-app": "next",
     "@openmrs/esm-patient-attachments-app": "openmrs-esm-patient-attachments-app-9.1.0.tgz",
-    "@openmrs/esm-patient-banner-app": "openmrs-esm-patient-banner-app-9.1.0.tgz",
+    "@openmrs/esm-patient-banner-app": "next",
     "@openmrs/esm-patient-chart-app": "next",
     "@openmrs/esm-patient-conditions-app": "next",
     "@openmrs/esm-patient-flags-app": "next",
