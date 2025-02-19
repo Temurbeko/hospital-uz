@@ -62,33 +62,33 @@ services:
       - db-data:/var/lib/mysql
 
   # New PostgreSQL service for Telegram Bot (tg_db)
-  tg_db:
-    image: postgres:17
-    restart: "unless-stopped"
-    environment:
-      POSTGRES_USER: tg_user
-      POSTGRES_PASSWORD: tg_password
-      POSTGRES_DB: tg_clinic
-    ports:
-      - "5433:5432" # Exposing on a different host port to avoid conflict
-    volumes:
-      - tg_db_data:/var/lib/postgresql/data
+  # tg_db:
+  #   image: postgres:17
+  #   restart: "unless-stopped"
+  #   environment:
+  #     POSTGRES_USER: tg_user
+  #     POSTGRES_PASSWORD: tg_password
+  #     POSTGRES_DB: tg_clinic
+  #   ports:
+  #     - "5433:5432" # Exposing on a different host port to avoid conflict
+  #   volumes:
+  #     - tg_db_data:/var/lib/postgresql/data
 
-  # New Telegram Bot service (tg_bot)
-  tg_bot:
-    build: ./tg-clinic-bot
-    restart: "unless-stopped"
-    depends_on:
-      - tg_db
-    environment:
-      # Prisma will use this DATABASE_URL to connect to tg_db
-      DATABASE_URL: "postgresql://tg_user:tg_password@tg_db:5432/tg_clinic?schema=public"
-      # Set your Telegram bot token here (or via your host env variables)
-      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
-    ports:
-      - "3001:3000" # Map internal port 3000 to host port 3001
+  # # New Telegram Bot service (tg_bot)
+  # tg_bot:
+  #   build: ./tg-clinic-bot
+  #   restart: "unless-stopped"
+  #   depends_on:
+  #     - tg_db
+  #   environment:
+  #     # Prisma will use this DATABASE_URL to connect to tg_db
+  #     DATABASE_URL: "postgresql://tg_user:tg_password@tg_db:5432/tg_clinic?schema=public"
+  #     # Set your Telegram bot token here (or via your host env variables)
+  #     TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+  #   ports:
+  #     - "3001:3000" # Map internal port 3000 to host port 3001
 
 volumes:
   openmrs-data: ~
   db-data: ~
-  tg_db_data: ~
+  # tg_db_data: ~
