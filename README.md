@@ -59,3 +59,6 @@ those that should be part of the core package. For example, a form named `test_f
 Frontend configuration can be found in `frontend/config-core_demo.json`.
 
 Thanks!
+
+docker compose build
+docker compose up
