@@ -30,7 +30,7 @@
     "@openmrs/esm-patient-notes-app": "next",
     "@openmrs/esm-patient-orders-app": "openmrs-esm-patient-orders-app-9.2.0.tgz",
     "@openmrs/esm-patient-programs-app": "next",
-    "@openmrs/esm-patient-registration-app": "next",
+    "@openmrs/esm-patient-registration-app": "openmrs-esm-patient-registration-app.tgz",
     "@openmrs/esm-patient-search-app": "next",
     "@openmrs/esm-patient-tests-app": "openmrs-esm-patient-tests-app-9.2.0.tgz",
     "@openmrs/esm-patient-vitals-app": "openmrs-esm-patient-vitals-app-9.1.0.tgz",

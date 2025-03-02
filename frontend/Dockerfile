@@ -19,6 +19,7 @@ COPY packages/openmrs-esm-patient-orders-app-9.2.0.tgz .
 COPY packages/openmrs-esm-patient-tests-app-9.2.0.tgz .
 COPY packages/openmrs-esm-patient-vitals-app-9.1.0.tgz .
 COPY packages/openmrs-esm-patient-chart-app-9.2.0.tgz .
+COPY packages/openmrs-esm-patient-registration-app.tgz .
 
 COPY spa-assemble-config.json .
 COPY spa-build-config.json .
@@ -32,6 +33,8 @@ RUN yarn add ./openmrs-esm-patient-orders-app-9.2.0.tgz
 RUN yarn add ./openmrs-esm-patient-tests-app-9.2.0.tgz
 RUN yarn add ./openmrs-esm-patient-vitals-app-9.1.0.tgz
 RUN yarn add ./openmrs-esm-patient-chart-app-9.2.0.tgz
+RUN yarn add ./openmrs-esm-patient-registration-app.tgz
+
 
 
   
